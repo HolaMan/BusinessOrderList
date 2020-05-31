@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { StyleSheet, css } from 'aphrodite/no-important';
-import posize from 'components/posize.v11';
-import { commonStyles, shareStyles } from 'components/pxConfig.v11';
+import React, { Component } from "react";
+import { StyleSheet, css } from "aphrodite/no-important";
+import posize from "components/posize.v11";
+import { commonStyles, shareStyles } from "components/pxConfig.v11";
 
-const Px = posize('div');
-const PxFlex = posize('section');
+const Px = posize("div");
+const PxFlex = posize("section");
 
 export default class OrderPage extends Component {
   static inStorybook = true;
@@ -29,7 +29,7 @@ export default class OrderPage extends Component {
               <div className={css(styles.space103)} />
               <Px layout={layouts.txt13}>
                 <pre className={css(styles.txt13Content)}>
-                  {'Shipped, serviced by supplier.'}
+                  {"Shipped, serviced by supplier."}
                 </pre>
               </Px>
               <div className={css(styles.space105)} />
@@ -38,7 +38,7 @@ export default class OrderPage extends Component {
             <div className={css(styles.space79)} />
             <Px layout={layouts.txt14}>
               <pre className={css(styles.txt14Content)}>
-                {'May 10, 2020 12:34'}
+                {"May 10, 2020 12:34"}
               </pre>
             </Px>
             <div className={css(styles.space81)} />
@@ -49,7 +49,7 @@ export default class OrderPage extends Component {
               <div className={css(styles.space110)} />
               <Px layout={layouts.txt17}>
                 <pre className={css(styles.txt17Content)}>
-                  {'R & D Center Group.'}
+                  {"R & D Center Group."}
                 </pre>
               </Px>
               <div className={css(styles.space112)} />
@@ -58,7 +58,7 @@ export default class OrderPage extends Component {
             <div className={css(styles.space85)} />
             <Px layout={layouts.txt18}>
               <pre className={css(styles.txt18Content)}>
-                {'Xuanwu District, Nanjing City'}
+                {"Xuanwu District, Nanjing City"}
               </pre>
             </Px>
             <div className={css(styles.space87)} />
@@ -75,12 +75,12 @@ export default class OrderPage extends Component {
                   <div className={css(styles.space159)} />
                   <Px layout={layouts.txt27}>
                     <pre className={css(styles.txt27Content)}>
-                      {'Iphone 11 PRO Breakthrough three-camera system with  …'}
+                      {"Iphone 11 PRO Breakthrough three-camera system with  …"}
                     </pre>
                   </Px>
                   <div className={css(styles.space161)} />
                   <Px layout={layouts.txt28}>
-                    <pre className={css(styles.txt28Content)}>{'799.00 $'}</pre>
+                    <pre className={css(styles.txt28Content)}>{"799.00 $"}</pre>
                   </Px>
                   <div className={css(styles.space163)} />
                 </PxFlex>
@@ -98,13 +98,13 @@ export default class OrderPage extends Component {
                 <div className={css(styles.space131)} />
                 <Px layout={layouts.txt43}>
                   <pre className={css(styles.txt43Content)}>
-                    {'payment method'}
+                    {"payment method"}
                   </pre>
                 </Px>
                 <div className={css(styles.space133)} />
                 <Px layout={layouts.txt44}>
                   <pre className={css(styles.txt44Content)}>
-                    {'Online payment'}
+                    {"Online payment"}
                   </pre>
                 </Px>
                 <div className={css(styles.space135)} />
@@ -117,11 +117,11 @@ export default class OrderPage extends Component {
               <PxFlex layout={layouts.foregroundGroupFlexbox137}>
                 <div className={css(styles.space138)} />
                 <Px layout={layouts.txt31}>
-                  <pre className={css(styles.txt31Content)}>{'Amount'}</pre>
+                  <pre className={css(styles.txt31Content)}>{"Amount"}</pre>
                 </Px>
                 <div className={css(styles.space140)} />
                 <Px layout={layouts.txt32}>
-                  <pre className={css(styles.txt32Content)}>{'799.00 $'}</pre>
+                  <pre className={css(styles.txt32Content)}>{"799.00 $"}</pre>
                 </Px>
                 <div className={css(styles.space142)} />
               </PxFlex>
@@ -133,11 +133,11 @@ export default class OrderPage extends Component {
               <PxFlex layout={layouts.foregroundGroupFlexbox144}>
                 <div className={css(styles.space145)} />
                 <Px layout={layouts.txt39}>
-                  <pre className={css(styles.txt39Content)}>{'Freight'}</pre>
+                  <pre className={css(styles.txt39Content)}>{"Freight"}</pre>
                 </Px>
                 <div className={css(styles.space147)} />
                 <Px layout={layouts.txt40}>
-                  <pre className={css(styles.txt40Content)}>{'5.00 $'}</pre>
+                  <pre className={css(styles.txt40Content)}>{"5.00 $"}</pre>
                 </Px>
                 <div className={css(styles.space149)} />
               </PxFlex>
@@ -150,12 +150,12 @@ export default class OrderPage extends Component {
                 <div className={css(styles.space152)} />
                 <Px layout={layouts.txt35}>
                   <pre className={css(styles.txt35Content)}>
-                    {'The actual amount'}
+                    {"The actual amount"}
                   </pre>
                 </Px>
                 <div className={css(styles.space154)} />
                 <Px layout={layouts.txt36}>
-                  <pre className={css(styles.txt36Content)}>{'806.00 $'}</pre>
+                  <pre className={css(styles.txt36Content)}>{"806.00 $"}</pre>
                 </Px>
                 <div className={css(styles.space156)} />
               </PxFlex>
@@ -166,22 +166,26 @@ export default class OrderPage extends Component {
             <PxFlex layout={layouts.flexbox114}>
               <div className={css(styles.space115)} />
 
-              <Px layout={layouts.coverGroupGroup50}>
+              <Px layout={layouts.coverGroupGroup50} className="button">
                 <Px layout={layouts.rect10} />
                 <Px layout={layouts.txt11}>
                   <pre className={css(styles.txt11Content)}>
-                    {'Cancel order'}
+                    {"Cancel order"}
                   </pre>
                 </Px>
               </Px>
 
               <div className={css(styles.space117)} />
 
-              <Px layout={layouts.coverGroupGroup48}>
+              <Px
+                layout={layouts.coverGroupGroup48}
+                className="button"
+                onClick={() => alert("Order")}
+              >
                 <Px layout={layouts.rect7} />
                 <Px layout={layouts.txt8}>
                   <pre className={css(styles.txt8Content)}>
-                    {'Historical order'}
+                    {"Historical order"}
                   </pre>
                 </Px>
               </Px>
@@ -195,12 +199,12 @@ export default class OrderPage extends Component {
 
         <Px layout={layouts.txt21}>
           <pre className={css(styles.txt21Content)}>
-            {'Successful purchase'}
+            {"Successful purchase"}
           </pre>
         </Px>
         <Px layout={layouts.txt22}>
           <pre className={css(styles.txt22Content)}>
-            {'We will stock up for you as soon as possible.'}
+            {"We will stock up for you as soon as possible."}
           </pre>
         </Px>
       </Px>
@@ -220,7 +224,7 @@ const styles = StyleSheet.create({
     pointerEvents: `auto`,
     width: `100%`,
     height: `100%`,
-    backgroundImage: `url(${require('assets/72ddcdd1f3c1bf761eb52f14dbbfa38e.png')})`,
+    backgroundImage: `url(${require("assets/72ddcdd1f3c1bf761eb52f14dbbfa38e.png")})`,
     backgroundSize: `cover`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: `center center`,
@@ -260,7 +264,7 @@ const styles = StyleSheet.create({
     pointerEvents: `auto`,
     width: `100%`,
     height: `100%`,
-    backgroundImage: `url(${require('assets/3bb34b0e8177e2c696a67e7a48da50e4.png')})`,
+    backgroundImage: `url(${require("assets/3bb34b0e8177e2c696a67e7a48da50e4.png")})`,
     backgroundSize: `contain`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: `center center`
@@ -326,7 +330,7 @@ const styles = StyleSheet.create({
     pointerEvents: `auto`,
     width: `100%`,
     height: `100%`,
-    backgroundImage: `url(${require('assets/b2b9e79c27c631c04e984790e96f9b97.png')})`,
+    backgroundImage: `url(${require("assets/b2b9e79c27c631c04e984790e96f9b97.png")})`,
     backgroundSize: `contain`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: `center center`
@@ -405,7 +409,7 @@ const styles = StyleSheet.create({
     pointerEvents: `auto`,
     width: `100%`,
     height: `100%`,
-    backgroundImage: `url(${require('assets/0aa7ef7f49cf7297caef94065abb7f0c.png')})`,
+    backgroundImage: `url(${require("assets/0aa7ef7f49cf7297caef94065abb7f0c.png")})`,
     backgroundSize: `contain`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: `center center`,
@@ -874,38 +878,38 @@ const layouts = {
     absolute: true,
     nop: true,
     areaStyle: {},
-    xy: [['750px'], ['1624px']],
+    xy: [["750px"], ["1624px"]],
     className: css(styles.img3Body)
   },
   backgroundRect4: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(1254px,1254fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(1254px,1254fr)"]],
     className: css(styles.backgroundRect4Body)
   },
   img15: {
     nop: true,
     areaStyle: {},
-    xy: [['22px'], ['11px', '22px', '11fr']],
+    xy: [["22px"], ["11px", "22px", "11fr"]],
     className: css(styles.img15Body),
     outerClassName: css(styles.img15Outer)
   },
   txt13: {
     xy: [
-      ['1fr', 'minmax(434px,auto)', '0px'],
-      ['1fr', 'minmax(44px,auto)', '1fr']
+      ["1fr", "minmax(434px,auto)", "0px"],
+      ["1fr", "minmax(44px,auto)", "1fr"]
     ],
     className: css(styles.txt13Body),
     outerClassName: css(styles.txt13Outer)
   },
   flexbox100: {
-    xy: [['minmax(0px,750fr)'], ['minmax(44px,44fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(44px,44fr)"]],
     className: css(styles.flexbox100Body),
     outerClassName: css(styles.flexbox100Outer)
   },
   txt14: {
     xy: [
-      ['90px', 'minmax(266px,auto)', '394fr'],
-      ['1fr', 'minmax(39px,auto)', '1fr']
+      ["90px", "minmax(266px,auto)", "394fr"],
+      ["1fr", "minmax(39px,auto)", "1fr"]
     ],
     className: css(styles.txt14Body),
     outerClassName: css(styles.txt14Outer)
@@ -913,258 +917,258 @@ const layouts = {
   img19: {
     nop: true,
     areaStyle: {},
-    xy: [['22px'], ['11px', '22px', '11fr']],
+    xy: [["22px"], ["11px", "22px", "11fr"]],
     className: css(styles.img19Body),
     outerClassName: css(styles.img19Outer)
   },
   txt17: {
     xy: [
-      ['1fr', 'minmax(292px,auto)', '0px'],
-      ['1fr', 'minmax(44px,auto)', '1fr']
+      ["1fr", "minmax(292px,auto)", "0px"],
+      ["1fr", "minmax(44px,auto)", "1fr"]
     ],
     className: css(styles.txt17Body),
     outerClassName: css(styles.txt17Outer)
   },
   flexbox107: {
-    xy: [['minmax(0px,750fr)'], ['minmax(44px,44fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(44px,44fr)"]],
     className: css(styles.flexbox107Body),
     outerClassName: css(styles.flexbox107Outer)
   },
   txt18: {
     xy: [
-      ['90px', 'minmax(391px,auto)', '269fr'],
-      ['1fr', 'minmax(39px,auto)', '1fr']
+      ["90px", "minmax(391px,auto)", "269fr"],
+      ["1fr", "minmax(39px,auto)", "1fr"]
     ],
     className: css(styles.txt18Body),
     outerClassName: css(styles.txt18Outer)
   },
   backgroundRect24: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(228px,228fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(228px,228fr)"]],
     className: css(styles.backgroundRect24Body)
   },
   img26: {
     nop: true,
     areaStyle: {},
-    xy: [['minmax(0px,162fr)'], ['29px', 'minmax(162px,162fr)', '37fr']],
+    xy: [["minmax(0px,162fr)"], ["29px", "minmax(162px,162fr)", "37fr"]],
     className: css(styles.img26Body),
     outerClassName: css(styles.img26Outer)
   },
   txt27: {
-    xy: [['minmax(0px,460fr)'], ['1fr', 'auto', '1fr']],
+    xy: [["minmax(0px,460fr)"], ["1fr", "auto", "1fr"]],
     className: css(styles.txt27Body),
     outerClassName: css(styles.txt27Outer)
   },
   txt28: {
     xy: [
-      ['0px', 'minmax(117px,auto)', '343fr'],
-      ['1fr', 'minmax(42px,auto)', '1fr']
+      ["0px", "minmax(117px,auto)", "343fr"],
+      ["1fr", "minmax(42px,auto)", "1fr"]
     ],
     className: css(styles.txt28Body),
     outerClassName: css(styles.txt28Outer)
   },
   flexbox158: {
-    xy: [['minmax(0px,460fr)'], ['minmax(228px,228fr)']],
+    xy: [["minmax(0px,460fr)"], ["minmax(228px,228fr)"]],
     className: css(styles.flexbox158Body),
     outerClassName: css(styles.flexbox158Outer)
   },
   foregroundGroupFlexbox121: {
-    xy: [['minmax(0px,750fr)'], ['minmax(0px,228fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(0px,228fr)"]],
     className: css(styles.foregroundGroupFlexbox121Body)
   },
   coverGroupGroup52: {
-    xy: [['minmax(0px,750fr)'], ['minmax(0px,228fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(0px,228fr)"]],
     className: css(styles.coverGroupGroup52Body),
     outerClassName: css(styles.coverGroupGroup52Outer)
   },
   backgroundRect42: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.backgroundRect42Body)
   },
   txt43: {
     xy: [
-      ['1fr', 'minmax(209px,auto)', '0px'],
-      ['28fr', 'minmax(39px,auto)', '21fr']
+      ["1fr", "minmax(209px,auto)", "0px"],
+      ["28fr", "minmax(39px,auto)", "21fr"]
     ],
     className: css(styles.txt43Body),
     outerClassName: css(styles.txt43Outer)
   },
   txt44: {
     xy: [
-      ['1fr', 'minmax(197px,auto)', '0px'],
-      ['28fr', 'minmax(39px,auto)', '21fr']
+      ["1fr", "minmax(197px,auto)", "0px"],
+      ["28fr", "minmax(39px,auto)", "21fr"]
     ],
     className: css(styles.txt44Body),
     outerClassName: css(styles.txt44Outer)
   },
   foregroundGroupFlexbox130: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.foregroundGroupFlexbox130Body)
   },
   coverGroupGroup60: {
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.coverGroupGroup60Body),
     outerClassName: css(styles.coverGroupGroup60Outer)
   },
   backgroundRect30: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.backgroundRect30Body)
   },
   txt31: {
     xy: [
-      ['1fr', 'minmax(97px,auto)', '0px'],
-      ['28fr', 'minmax(39px,auto)', '21fr']
+      ["1fr", "minmax(97px,auto)", "0px"],
+      ["28fr", "minmax(39px,auto)", "21fr"]
     ],
     className: css(styles.txt31Body),
     outerClassName: css(styles.txt31Outer)
   },
   txt32: {
     xy: [
-      ['1fr', 'minmax(109px,auto)', '0px'],
-      ['28fr', 'minmax(39px,auto)', '21fr']
+      ["1fr", "minmax(109px,auto)", "0px"],
+      ["28fr", "minmax(39px,auto)", "21fr"]
     ],
     className: css(styles.txt32Body),
     outerClassName: css(styles.txt32Outer)
   },
   foregroundGroupFlexbox137: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.foregroundGroupFlexbox137Body)
   },
   coverGroupGroup54: {
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.coverGroupGroup54Body),
     outerClassName: css(styles.coverGroupGroup54Outer)
   },
   backgroundRect38: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.backgroundRect38Body)
   },
   txt39: {
     xy: [
-      ['1fr', 'minmax(88px,auto)', '0px'],
-      ['28fr', 'minmax(39px,auto)', '21fr']
+      ["1fr", "minmax(88px,auto)", "0px"],
+      ["28fr", "minmax(39px,auto)", "21fr"]
     ],
     className: css(styles.txt39Body),
     outerClassName: css(styles.txt39Outer)
   },
   txt40: {
     xy: [
-      ['1fr', 'minmax(78px,auto)', '0px'],
-      ['28fr', 'minmax(39px,auto)', '21fr']
+      ["1fr", "minmax(78px,auto)", "0px"],
+      ["28fr", "minmax(39px,auto)", "21fr"]
     ],
     className: css(styles.txt40Body),
     outerClassName: css(styles.txt40Outer)
   },
   foregroundGroupFlexbox144: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.foregroundGroupFlexbox144Body)
   },
   coverGroupGroup58: {
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.coverGroupGroup58Body),
     outerClassName: css(styles.coverGroupGroup58Outer)
   },
   backgroundRect34: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.backgroundRect34Body)
   },
   txt35: {
     xy: [
-      ['1fr', 'minmax(232px,auto)', '0px'],
-      ['28fr', 'minmax(39px,auto)', '21fr']
+      ["1fr", "minmax(232px,auto)", "0px"],
+      ["28fr", "minmax(39px,auto)", "21fr"]
     ],
     className: css(styles.txt35Body),
     outerClassName: css(styles.txt35Outer)
   },
   txt36: {
     xy: [
-      ['1fr', 'minmax(109px,auto)', '0px'],
-      ['28fr', 'minmax(39px,auto)', '21fr']
+      ["1fr", "minmax(109px,auto)", "0px"],
+      ["28fr", "minmax(39px,auto)", "21fr"]
     ],
     className: css(styles.txt36Body),
     outerClassName: css(styles.txt36Outer)
   },
   foregroundGroupFlexbox151: {
     absolute: true,
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.foregroundGroupFlexbox151Body)
   },
   coverGroupGroup56: {
-    xy: [['minmax(0px,750fr)'], ['minmax(88px,88fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(88px,88fr)"]],
     className: css(styles.coverGroupGroup56Body),
     outerClassName: css(styles.coverGroupGroup56Outer)
   },
   rect10: {
     absolute: true,
-    xy: [['minmax(0px,314fr)'], ['minmax(116px,116fr)']],
+    xy: [["minmax(0px,314fr)"], ["minmax(116px,116fr)"]],
     className: css(styles.rect10Body)
   },
   txt11: {
     absolute: true,
-    xy: [['66fr', '184px', '65fr'], ['43fr', 'minmax(39px,auto)', '34fr']],
+    xy: [["66fr", "184px", "65fr"], ["43fr", "minmax(39px,auto)", "34fr"]],
     className: css(styles.txt11Body)
   },
   coverGroupGroup50: {
-    xy: [['minmax(270px,350px)'], ['minmax(116px,116fr)']],
+    xy: [["minmax(270px,350px)"], ["minmax(116px,116fr)"]],
     className: css(styles.coverGroupGroup50Body),
     outerClassName: css(styles.coverGroupGroup50Outer)
   },
   rect7: {
     absolute: true,
-    xy: [['minmax(0px,310fr)'], ['minmax(112px,112fr)']],
+    xy: [["minmax(0px,310fr)"], ["minmax(112px,112fr)"]],
     className: css(styles.rect7Body)
   },
   txt8: {
     absolute: true,
-    xy: [['53fr', '205px', '53fr'], ['41fr', 'minmax(39px,auto)', '32fr']],
+    xy: [["53fr", "205px", "53fr"], ["41fr", "minmax(39px,auto)", "32fr"]],
     className: css(styles.txt8Body)
   },
   coverGroupGroup48: {
-    xy: [['minmax(270px,350px)'], ['2px', 'minmax(112px,112fr)', '2fr']],
+    xy: [["minmax(270px,350px)"], ["2px", "minmax(112px,112fr)", "2fr"]],
     className: css(styles.coverGroupGroup48Body),
     outerClassName: css(styles.coverGroupGroup48Outer)
   },
   flexbox114: {
-    xy: [['minmax(0px,750fr)'], ['minmax(116px,116fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(116px,116fr)"]],
     className: css(styles.flexbox114Body),
     outerClassName: css(styles.flexbox114Outer)
   },
   foregroundGroupFlexbox74: {
-    xy: [['minmax(0px,750fr)'], ['minmax(1254px,1254fr)']],
+    xy: [["minmax(0px,750fr)"], ["minmax(1254px,1254fr)"]],
     className: css(styles.foregroundGroupFlexbox74Body)
   },
   group46: {
-    xy: [['minmax(0px,750fr)'], ['370px', 'minmax(0px,1254fr)', '0fr']],
+    xy: [["minmax(0px,750fr)"], ["370px", "minmax(0px,1254fr)", "0fr"]],
     className: css(styles.group46Body)
   },
   txt21: {
     absolute: true,
     xy: [
-      ['50px', 'minmax(500px,auto)', '200fr'],
-      ['229px', 'minmax(67px,auto)', '1328fr']
+      ["50px", "minmax(500px,auto)", "200fr"],
+      ["229px", "minmax(67px,auto)", "1328fr"]
     ],
     className: css(styles.txt21Body)
   },
   txt22: {
     absolute: true,
     xy: [
-      ['50px', 'minmax(561px,auto)', '139fr'],
-      ['300px', 'minmax(36px,auto)', '1288fr']
+      ["50px", "minmax(561px,auto)", "139fr"],
+      ["300px", "minmax(36px,auto)", "1288fr"]
     ],
     className: css(styles.txt22Body)
   },
   group1: {
     nop: true,
-    trackStyle: { overflow: 'auto' },
-    areaStyle: { overflow: 'hidden' },
-    xy: [['minmax(0px,750fr)'], ['minmax(0px,1624fr)']],
+    trackStyle: { overflow: "auto" },
+    areaStyle: { overflow: "hidden" },
+    xy: [["minmax(0px,750fr)"], ["minmax(0px,1624fr)"]],
     className: css(styles.group1Body)
   }
 };
