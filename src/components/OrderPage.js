@@ -801,7 +801,7 @@ const styles = StyleSheet.create({
     pointerEvents: `auto`,
     width: `100%`,
     height: `100%`,
-    backgroundColor: `rgb(228,114,74)`,
+    backgroundColor: `rgb(28,114,224)`,
     borderRadius: `14px 14px 14px 14px`
   },
   txt8Body: {
